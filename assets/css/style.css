@@ -4,7 +4,7 @@
     outline: none;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    /* color: white; */
   }
 
 
@@ -152,3 +152,40 @@ nav .search-icon{
   }
 } */
 
+h2 {
+text-align: center;
+color: black;
+padding: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 2fr; 
+  /* grid-template-rows: max-content repeat(2, 1fr); */
+  gap: 8px;
+  height: 100%;
+  color: black; 
+}
+
+.col m1, .col m2 {
+  border-color: black;
+  border-radius: 4px; 
+}
+
+main {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-rows: 2fr;
+  gap: 50px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+/* .col l1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+  grid-column-gap: 25px;
+} */
