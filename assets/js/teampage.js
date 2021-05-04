@@ -38,15 +38,31 @@ function fetchNbaStats() {
 
 function fetchBio(teamCity, teamName) {
   let wikiApi =
-    "https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=" +
+    "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=" +
     teamCity +
     "%20" +
     teamName;
+
+
+
   // %20 indicates a space in the URL
 
   fetch(wikiApi).then(function (response) {
     if (response.ok) {
-      response.json().then()
+      response.json().then(function (data) {
+        let pageid = data.query.pages[0];
+        console.log(pageid);
+        console.dir(data.query.pages);
+
+        $("#bio-title").text("About the " + teamCity + " " + teamName);
+        let bio = $("<p>");
+        bio.text(data.query.pages[Object.keys(data.query.pages)[0]].extract);
+        let link = $("<a>");
+        link.attr("href", "https://en.wikipedia.org/wiki/" + teamCity + "_" + teamName);
+        link.text(" Read more here.");
+        bio.append(link);
+        $("#team-bio").append(bio);
+      })
     }
   });
 }
