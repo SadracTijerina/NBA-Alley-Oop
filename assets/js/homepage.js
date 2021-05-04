@@ -3,6 +3,10 @@ var TEAMKEY;
 $(".container").on("click", "img", function () {
   TEAMKEY = this.id;
 
-  //document.location.replace("./teampage.html&id=" + TEAMKEY); RESPONSIVE
-  document.location.replace("./teampage.html");
+  console.log(TEAMKEY);
+
+  document.location.replace("./teampage.html&id=" + TEAMKEY);
+  //document.location.replace("./teampage.html");
 });
+
+console.log("webpage now active");
