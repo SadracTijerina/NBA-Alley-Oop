@@ -1,7 +1,3 @@
-var WIKIAPI =
-  "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=";
-// %20 indicates a space in the URL
-
 var TEAMID = localStorage.getItem("teamID");
 var TEAMNAME;
 var TEAMCITY;
@@ -34,12 +30,25 @@ function fetchNbaStats() {
         $("#team-name").text("Team Name: " + TEAMNAME);
         $("#conference").text("Converence: " + teamConference);
         $("#division").text("Division: " + teamDivision);
+        fetchBio(TEAMCITY, TEAMNAME);
       });
     }
   });
 }
 
-function fetchBio() {}
+function fetchBio(teamCity, teamName) {
+  let wikiApi =
+    "https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=" +
+    teamCity +
+    "%20" +
+    teamName;
+  // %20 indicates a space in the URL
+
+  fetch(wikiApi).then(function (response) {
+    if (response.ok) {
+      response.json().then()
+    }
+  });
+}
 
 fetchNbaStats();
-fetchBio();
