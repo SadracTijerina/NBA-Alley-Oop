@@ -4,7 +4,234 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>NBA Stat Finder</title>
   </head>
-  <body></body>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper nav-color">
+        <a href="./index.html" class="brand-logo center">NBA Alley-Oop</a>
+        <form class="right">
+          <div class="input-field">
+            <input id="search" type="search" required />
+            <label class="label-icon" for="search"
+              ><i class="material-icons">search</i></label
+            >
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Team Table-->
+    <div class="container">
+      <div class="row">
+        <div class="col m2 s4">
+          <img id="1" src="assets/images/ATL-Hawks.svg" alt="Atlanta Hawks" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="2"
+            src="assets/images/BOS-Celtics.svg"
+            alt="Boston Celtics"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="3" src="assets/images/BKN-Nets.svg" alt="Brooklyn Nets" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="4"
+            src="assets/images/CHA-Hornets.svg"
+            alt="Charlotte Hornets"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="5" src="assets/images/CHI-Bulls.svg" alt="Chicago Bulls" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="6"
+            src="assets/images/CLE-Cavaliers.svg"
+            alt="Clevand Cavaliers"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m2 s4">
+          <img id="7" src="assets/images/DAL-Mavericks.svg" alt="Dallas Mavericks" />
+        </div>
+        <div class="col m2 s4">
+          <img id="8" src="assets/images/DEN-Nuggets.svg" alt="Denver Nuggets" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="9"
+            src="assets/images/DET-Pistons.svg"
+            alt="Detroit Pistons"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="10"
+            src="assets/images/GSW-Warriors.svg"
+            alt="Golden State Warriors"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="11"
+            src="assets/images/HOU-Rockets.svg"
+            alt="Houston Rockets"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="12"
+            src="assets/images/IND-Pacers.svg"
+            alt="Indiana Pacers"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m2 s4">
+          <img
+            id="13"
+            src="assets/images/LAC-Clippers.svg"
+            alt="Los Angeles Clippers"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="14"
+            src="assets/images/LAL-Lakers.svg"
+            alt="Los Angeles Lakers"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="15"
+            src="assets/images/MEM-Grizzlies.svg"
+            alt="Memphis Grizzlies"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="16" src="assets/images/MIA-Heat.svg" alt="Miami Heat" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="17"
+            src="assets/images/MIL-Bucks.svg"
+            alt="Milwaukee Bucks"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="18"
+            src="assets/images/MIN-Timberwolves.svg"
+            alt="Minnesota Timberwolves"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m2 s4">
+          <img
+            id="19"
+            src="assets/images/NOP-Pelicans.svg"
+            alt="New Orleans Pelicans"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="20" src="assets/images/NYK-Knicks.svg" alt="New York Knicks" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="21"
+            src="assets/images/OKC-Thunder.svg"
+            alt="Oklhoma Thunder"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="22" src="assets/images/ORL-Magic.svg" alt="Orlando Magic" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="23"
+            src="assets/images/PHI-76ers.svg"
+            alt="Philadelphia 76ers"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="24" src="assets/images/PHX-Suns.svg" alt="Phoenix Suns" />
+        </div>
+
+        <div class="row">
+          <div class="col m2 s4">
+            <img
+              id="25"
+              src="assets/images/POR-Trail Blazers.svg"
+              alt="Portland Trail Blazers"
+            />
+          </div>
+       
+
+        <div class="col m2 s4">
+          <img
+            id="26"
+            src="assets/images/SAS-Spurs.svg"
+            alt="San Antonio Spurs"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="27"
+            src="assets/images/SAC-Kings.svg"
+            alt="Sacramento Kings"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="28"
+            src="assets/images/TOR-Raptors.svg"
+            alt="Toronto Raptors"
+          />
+        </div>
+        <div class="col m2 s4">
+          <img id="29" src="assets/images/UTA-Jazz.svg" alt="Utah Jazz" />
+        </div>
+        <div class="col m2 s4">
+          <img
+            id="30"
+            src="assets/images/WAS-Wizards.svg"
+            alt="Chicago Bulls"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./assets/js/homepage.js"></script>
+  
+   
+  </body>
+  
 </html>

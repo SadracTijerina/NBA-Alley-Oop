@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* color: white; */
+  }
+
+
+.nav-color{
+    background: linear-gradient(to right, #1D428A, #C8102E);
+     
+}
+
+.container {
+  margin-top: 50px;
+}
+
+
+footer {
+ 
+
+  background: linear-gradient(to right, #1D428A, #C8102E);
+  
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
