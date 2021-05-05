@@ -16,6 +16,7 @@ header {
 .container {
   margin-top: 50px;
 }
+
 footer {
   background: linear-gradient(to right, #1d428a, #c8102e);
   height: 60px;
@@ -35,5 +36,16 @@ body {
   padding-bottom: 16px;
 }
 main {
-  flex: 1 0 auto;
+  flex: 1 
+  0 auto;
+}
+
+#team-info {
+  align-items: center;
+  display: flex;
+}
+
+.info p {
+  margin-top: 10px;
+
 }

@@ -28,7 +28,7 @@ function fetchNbaStats() {
 
         $("#city-name").text("Team City: " + TEAMCITY);
         $("#team-name").text("Team Name: " + TEAMNAME);
-        $("#conference").text("Converence: " + teamConference);
+        $("#conference").text("Conference: " + teamConference);
         $("#division").text("Division: " + teamDivision);
         fetchBio(TEAMCITY, TEAMNAME);
       });
