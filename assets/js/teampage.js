@@ -43,8 +43,6 @@ function fetchBio(teamCity, teamName) {
     "%20" +
     teamName;
 
-
-
   // %20 indicates a space in the URL
 
   fetch(wikiApi).then(function (response) {
@@ -58,11 +56,14 @@ function fetchBio(teamCity, teamName) {
         let bio = $("<p>");
         bio.text(data.query.pages[Object.keys(data.query.pages)[0]].extract);
         let link = $("<a>");
-        link.attr("href", "https://en.wikipedia.org/wiki/" + teamCity + "_" + teamName);
+        link.attr(
+          "href",
+          "https://en.wikipedia.org/wiki/" + teamCity + "_" + teamName
+        );
         link.text(" Read more here.");
         bio.append(link);
         $("#team-bio").append(bio);
-      })
+      });
     }
   });
 }
