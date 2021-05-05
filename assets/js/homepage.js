@@ -3,6 +3,8 @@ var TEAMKEY;
 $(".container").on("click", "img", function () {
   TEAMKEY = this.id;
 
-  //document.location.replace("./teampage.html&id=" + TEAMKEY); RESPONSIVE
+  localStorage.clear();
+  localStorage.setItem("teamID", TEAMKEY);
+
   document.location.replace("./teampage.html");
 });
