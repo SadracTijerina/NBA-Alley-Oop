@@ -43,9 +43,15 @@ main {
 #team-info {
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 .info p {
   margin-top: 10px;
+  font-size: 1.5rem;
+}
 
+h5:first-child {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
 }
