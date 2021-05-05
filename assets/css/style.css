@@ -1,36 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    /* color: white; */
-  }
-
-
-.nav-color{
-    background: linear-gradient(to right, #1D428A, #C8102E);
-     
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* color: white; */
 }
-
+.nav-color {
+  background: linear-gradient(to right, #1d428a, #c8102e);
+}
 .container {
   margin-top: 50px;
 }
-
-
 footer {
- 
-
-  background: linear-gradient(to right, #1D428A, #C8102E);
-  
+  background: linear-gradient(to right, #1d428a, #c8102e);
+  height: 60px;
 }
-
+#footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 16px;
 }
-
 main {
   flex: 1 0 auto;
 }
