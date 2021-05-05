@@ -9,6 +9,10 @@
 .nav-color {
   background: linear-gradient(to right, #1d428a, #c8102e);
 }
+
+header {
+  text-align: center;
+}
 .container {
   margin-top: 50px;
 }
